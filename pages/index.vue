@@ -1,10 +1,10 @@
 <template>
   <div>
     <HeroSection />
+    <FeaturesSection />
     <DreamHousesSection />
     <LandSection />
     <VideosSection />
-    <FeaturesSection />
     <ContactSection />
   </div>
 </template>

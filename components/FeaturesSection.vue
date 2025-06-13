@@ -17,21 +17,6 @@
           <p class="text-gray-600">{{ feature.description }}</p>
         </div>
       </div>
-
-      <div class="mt-16 text-center">
-        <h3 class="text-2xl font-semibold mb-6">Kesempatan Tidak Datang Dua Kali!</h3>
-        <p class="text-gray-600 max-w-3xl mx-auto mb-8">
-          Tanah ini bukan sekadar lahan—ini adalah masa depan Anda. Dengan lokasi premium, lingkungan asri, dan prospek cerah, tanah di Jogja adalah pilihan tepat bagi Anda yang ingin menikmati ketenangan sekaligus keuntungan investasi.
-        </p>
-        <a 
-          href="https://wa.me/6282325674451?text=Halo,%20saya%20tertarik%20dengan%20tanah%20di%20Jogja.%20Boleh%20minta%20informasi%20lebih%20detail?" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="btn btn-primary"
-        >
-          Hubungi Kami Sekarang
-        </a>
-      </div>
     </div>
   </section>
 </template>

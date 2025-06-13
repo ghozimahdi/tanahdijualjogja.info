@@ -36,16 +36,6 @@
 
             <div class="flex items-start">
               <div class="text-accent text-xl mr-4">
-                <span class="fas fa-map-marker-alt"></span>
-              </div>
-              <div>
-                <h4 class="font-semibold mb-1">Alamat</h4>
-                <p class="text-gray-300">Jl. Kaliurang Km. 10, Sleman, Yogyakarta</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="text-accent text-xl mr-4">
                 <span class="fas fa-clock"></span>
               </div>
               <div>

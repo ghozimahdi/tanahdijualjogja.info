@@ -11,14 +11,14 @@
       <!-- Swiper Slider -->
       <div class="relative">
         <swiper
-          :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
-          :slides-per-view="1"
-          :space-between="20"
-          :loop="true"
-          :autoplay="{ delay: 3500, disableOnInteraction: false }"
-          :pagination="{ clickable: true }"
-          :navigation="true"
-          :breakpoints="{
+            :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
+            :slides-per-view="1"
+            :space-between="20"
+            :loop="true"
+            :autoplay="{ delay: 3500, disableOnInteraction: false }"
+            :pagination="{ clickable: true }"
+            :navigation="true"
+            :breakpoints="{
             640: {
               slidesPerView: 2,
             },
@@ -26,23 +26,24 @@
               slidesPerView: 3,
             },
           }"
-          class="mySwiper"
+            class="mySwiper"
         >
           <swiper-slide v-for="(land, index) in lands" :key="index">
             <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
               <div class="h-64 overflow-hidden">
-                <img :src="land.image" :alt="land.title" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+                <img :src="land.image" :alt="land.title"
+                     class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2">{{ land.title }}</h3>
                 <p class="text-gray-600 mb-4">{{ land.description }}</p>
                 <div class="flex justify-between items-center">
                   <span class="text-secondary font-bold">{{ land.price }}</span>
-                  <a 
-                    href="https://wa.me/6282325674451?text=Halo,%20saya%20tertarik%20dengan%20tanah%20di%20Jogja.%20Boleh%20minta%20informasi%20lebih%20detail?" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="text-primary font-medium hover:underline"
+                  <a
+                      href="https://wa.me/6282325674451?text=Halo,%20saya%20tertarik%20dengan%20tanah%20di%20Jogja.%20Boleh%20minta%20informasi%20lebih%20detail?"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-primary font-medium hover:underline"
                   >
                     Detail
                   </a>
@@ -52,14 +53,37 @@
           </swiper-slide>
         </swiper>
       </div>
+
+      <!-- Copyright and Advantages Section -->
+      <div class="mt-16 text-center">
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+              href="https://wa.me/6282325674451?text=Halo,%20saya%20tertarik%20dengan%20tanah%20di%20Jogja.%20Boleh%20minta%20price%20list%20nya?"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-accent"
+          >
+            Download Pricelist
+          </a>
+          <a
+              href="https://wa.me/6282325674451?text=Halo,%20saya%20tertarik%20dengan%20tanah%20di%20Jogja.%20Boleh%20minta%20informasi%20lebih%20detail?"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+          >
+            Info Detail
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import {defineComponent} from 'vue'
+import {Swiper, SwiperSlide} from 'swiper/vue'
+import {Navigation, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
