@@ -2,7 +2,7 @@
   <section class="section bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-primary mb-4">Video Inspirasi</h2>
+        <h2 class="text-primary mb-4">Video Lokasi</h2>
         <p class="text-gray-600 max-w-3xl mx-auto">
           Lihat berbagai inspirasi dan informasi tentang properti di Jogja melalui video berikut.
         </p>
