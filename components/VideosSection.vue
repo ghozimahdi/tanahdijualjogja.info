@@ -14,7 +14,8 @@
             :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
             :slides-per-view="1"
             :space-between="20"
-            :loop="true"
+            :loop="getLoop"
+            :autoplay="{ delay: 3500, disableOnInteraction: false }"
             :pagination="{ clickable: true }"
             :navigation="true"
             :breakpoints="{
@@ -66,7 +67,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {defineComponent, computed} from 'vue'
 import {Swiper, SwiperSlide} from 'swiper/vue'
 import {Navigation, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css'
@@ -108,6 +109,9 @@ export default defineComponent({
       }
     ]
 
+    // Matikan loop jika jumlah video kurang dari 6
+    const getLoop = computed(() => videos.length >= 6);
+
     // Function to open video in a new tab
     const openVideo = (embedUrl: string) => {
       // Convert embed URL to watch URL
@@ -129,7 +133,8 @@ export default defineComponent({
       getVideoThumbnail,
       SwiperNavigation: Navigation,
       SwiperPagination: Pagination,
-      SwiperAutoplay: Autoplay
+      SwiperAutoplay: Autoplay,
+      getLoop
     }
   }
 })
