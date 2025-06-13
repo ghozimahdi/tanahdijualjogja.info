@@ -69,32 +69,32 @@ export default defineComponent({
       {
         title: 'Keindahan Alam Jogja',
         description: 'Menikmati keindahan alam Jogja dengan pemandangan Gunung Merapi dan sawah.',
-        embedUrl: 'https://www.youtube.com/embed/5uKVS7XU22E'
+        embedUrl: 'https://www.youtube.com/embed/4F0DR8vlWT8'
       },
       {
         title: 'Investasi Tanah di Jogja',
         description: 'Tips dan strategi investasi tanah di Jogja untuk keuntungan jangka panjang.',
-        embedUrl: 'https://www.youtube.com/embed/Zy0RB7QPf0w'
+        embedUrl: 'https://www.youtube.com/embed/HBE6FrwJBF0'
       },
       {
         title: 'Membangun Rumah Impian',
         description: 'Langkah-langkah membangun rumah impian di Jogja dengan budget terjangkau.',
-        embedUrl: 'https://www.youtube.com/embed/8taXDD9JgvA'
+        embedUrl: 'https://www.youtube.com/embed/8KIUaBoVLnA'
       },
       {
         title: 'Potensi Bisnis di Jogja',
         description: 'Peluang bisnis menjanjikan dengan memanfaatkan tanah di Jogja.',
-        embedUrl: 'https://www.youtube.com/embed/qHftFYRaFRs'
+        embedUrl: 'https://www.youtube.com/embed/WSQ7WQ-VCsM'
       },
       {
         title: 'Wisata Alam Jogja',
         description: 'Menjelajahi keindahan wisata alam di sekitar Jogja yang menakjubkan.',
-        embedUrl: 'https://www.youtube.com/embed/JWMpF3QdQR4'
+        embedUrl: 'https://www.youtube.com/embed/WSYCD9VBOR8'
       },
       {
         title: 'Kehidupan di Jogja',
         description: 'Menikmati gaya hidup tenang dan nyaman di Jogja, jauh dari hiruk pikuk kota besar.',
-        embedUrl: 'https://www.youtube.com/embed/vSw9xO3qpxA'
+        embedUrl: 'https://www.youtube.com/embed/WSYCD9VBOR8'
       }
     ]
 
