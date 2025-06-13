@@ -11,13 +11,13 @@
       <!-- Swiper Slider -->
       <div class="relative">
         <swiper
-          :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
-          :slides-per-view="1"
-          :space-between="20"
-          :loop="true"
-          :pagination="{ clickable: true }"
-          :navigation="true"
-          :breakpoints="{
+            :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
+            :slides-per-view="1"
+            :space-between="20"
+            :loop="true"
+            :pagination="{ clickable: true }"
+            :navigation="true"
+            :breakpoints="{
             768: {
               slidesPerView: 2,
             },
@@ -25,22 +25,37 @@
               slidesPerView: 3,
             },
           }"
-          class="mySwiper"
+            class="mySwiper"
         >
           <swiper-slide v-for="(video, index) in videos" :key="index">
-            <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
-              <div class="aspect-w-16 aspect-h-9">
-                <iframe 
-                  :src="video.embedUrl" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen
-                  class="w-full h-full"
-                ></iframe>
+            <div
+                class="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col cursor-pointer transition-transform duration-300 hover:-translate-y-2"
+                @click="openVideo(video.embedUrl)">
+              <div class="aspect-w-16 aspect-h-9 relative flex-col">
+                <img
+                    :src="getVideoThumbnail(video.embedUrl)"
+                    :alt="video.title"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                      class="bg-primary bg-opacity-80 rounded-full p-4 text-white transform transition-transform duration-300 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="p-6">
+              <div class="p-6 flex-grow min-h-[150px]">
                 <h3 class="text-xl font-semibold mb-2">{{ video.title }}</h3>
                 <p class="text-gray-600">{{ video.description }}</p>
+                <div class="mt-4 text-center">
+                  <span class="text-primary font-medium hover:underline">Tonton Video</span>
+                </div>
               </div>
             </div>
           </swiper-slide>
@@ -51,9 +66,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import {defineComponent} from 'vue'
+import {Swiper, SwiperSlide} from 'swiper/vue'
+import {Navigation, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -69,37 +84,54 @@ export default defineComponent({
       {
         title: 'Keindahan Alam Jogja',
         description: 'Menikmati keindahan alam Jogja dengan pemandangan Gunung Merapi dan sawah.',
-        embedUrl: 'https://www.youtube.com/embed/4F0DR8vlWT8'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/4F0DR8vlWT8'
       },
       {
         title: 'Investasi Tanah di Jogja',
         description: 'Tips dan strategi investasi tanah di Jogja untuk keuntungan jangka panjang.',
-        embedUrl: 'https://www.youtube.com/embed/HBE6FrwJBF0'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/HBE6FrwJBF0'
       },
       {
         title: 'Membangun Rumah Impian',
         description: 'Langkah-langkah membangun rumah impian di Jogja dengan budget terjangkau.',
-        embedUrl: 'https://www.youtube.com/embed/8KIUaBoVLnA'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/8KIUaBoVLnA'
       },
       {
         title: 'Potensi Bisnis di Jogja',
         description: 'Peluang bisnis menjanjikan dengan memanfaatkan tanah di Jogja.',
-        embedUrl: 'https://www.youtube.com/embed/WSQ7WQ-VCsM'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/WSQ7WQ-VCsM'
       },
       {
         title: 'Wisata Alam Jogja',
         description: 'Menjelajahi keindahan wisata alam di sekitar Jogja yang menakjubkan.',
-        embedUrl: 'https://www.youtube.com/embed/WSYCD9VBOR8'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/WSYCD9VBOR8'
       },
       {
         title: 'Kehidupan di Jogja',
         description: 'Menikmati gaya hidup tenang dan nyaman di Jogja, jauh dari hiruk pikuk kota besar.',
-        embedUrl: 'https://www.youtube.com/embed/WSYCD9VBOR8'
+        embedUrl: 'https://www.youtube-nocookie.com/embed/WSYCD9VBOR8'
       }
     ]
 
+    // Function to open video in a new tab
+    const openVideo = (embedUrl: string) => {
+      // Convert embed URL to watch URL
+      const watchUrl = embedUrl.replace('youtube-nocookie.com/embed/', 'youtube.com/watch?v=');
+      window.open(watchUrl, '_blank');
+    };
+
+    // Function to get video thumbnail from embedUrl
+    const getVideoThumbnail = (embedUrl: string) => {
+      // Extract video ID from embedUrl
+      const videoId = embedUrl.split('/').pop() || '';
+      // Return YouTube thumbnail URL (using hqdefault as it's more reliable than maxresdefault)
+      return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    };
+
     return {
       videos,
+      openVideo,
+      getVideoThumbnail,
       SwiperNavigation: Navigation,
       SwiperPagination: Pagination,
       SwiperAutoplay: Autoplay
@@ -111,7 +143,11 @@ export default defineComponent({
 <style scoped>
 .aspect-w-16 {
   position: relative;
+  width: 100%;
   padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  margin-bottom: 0;
+  height: 0;
 }
 
 .aspect-h-9 {
@@ -120,5 +156,6 @@ export default defineComponent({
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 </style>
