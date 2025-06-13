@@ -31,11 +31,11 @@
             <div
                 class="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col cursor-pointer transition-transform duration-300 hover:-translate-y-2"
                 @click="openVideo(video.embedUrl)">
-              <div class="aspect-w-16 aspect-h-9 relative flex-col">
+              <div class="relative aspect-[16/9] w-full">
                 <img
                     :src="getVideoThumbnail(video.embedUrl)"
                     :alt="video.title"
-                    class="w-full h-full object-cover"
+                    class="absolute inset-0 w-full h-full object-cover"
                 />
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div
@@ -82,32 +82,27 @@ export default defineComponent({
   setup() {
     const videos = [
       {
-        title: 'Keindahan Alam Jogja',
+        title: 'Tanah Pekarangan Area Palagan Jogja',
         description: 'Menikmati keindahan alam Jogja dengan pemandangan Gunung Merapi dan sawah.',
         embedUrl: 'https://www.youtube-nocookie.com/embed/4F0DR8vlWT8'
       },
       {
-        title: 'Investasi Tanah di Jogja',
+        title: 'Tanah Kavling Pekarangan Dekat Kotagede, Potensi Tinggi di Jogja',
         description: 'Tips dan strategi investasi tanah di Jogja untuk keuntungan jangka panjang.',
         embedUrl: 'https://www.youtube-nocookie.com/embed/HBE6FrwJBF0'
       },
       {
-        title: 'Membangun Rumah Impian',
+        title: 'Tanah Kavling Pekarangan Dekat Kampus UII',
         description: 'Langkah-langkah membangun rumah impian di Jogja dengan budget terjangkau.',
         embedUrl: 'https://www.youtube-nocookie.com/embed/8KIUaBoVLnA'
       },
       {
-        title: 'Potensi Bisnis di Jogja',
+        title: 'Tanah Kavling Pekarangan Dekat Kampus UMY',
         description: 'Peluang bisnis menjanjikan dengan memanfaatkan tanah di Jogja.',
         embedUrl: 'https://www.youtube-nocookie.com/embed/WSQ7WQ-VCsM'
       },
       {
-        title: 'Wisata Alam Jogja',
-        description: 'Menjelajahi keindahan wisata alam di sekitar Jogja yang menakjubkan.',
-        embedUrl: 'https://www.youtube-nocookie.com/embed/WSYCD9VBOR8'
-      },
-      {
-        title: 'Kehidupan di Jogja',
+        title: 'Tanah Kavling Pekarangan Barat Tugu Jogja',
         description: 'Menikmati gaya hidup tenang dan nyaman di Jogja, jauh dari hiruk pikuk kota besar.',
         embedUrl: 'https://www.youtube-nocookie.com/embed/WSYCD9VBOR8'
       }
