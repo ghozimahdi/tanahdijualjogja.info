@@ -141,21 +141,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.aspect-w-16 {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  overflow: hidden;
-  margin-bottom: 0;
-  height: 0;
-}
 
-.aspect-h-9 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 </style>
