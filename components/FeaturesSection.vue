@@ -1,5 +1,5 @@
 <template>
-  <section class="section bg-white">
+  <section class="section bg-gray-50">
     <div class="container">
       <div class="text-center mb-16">
         <h2 class="text-primary mb-4">Keunggulan Tanah di Jogja</h2>

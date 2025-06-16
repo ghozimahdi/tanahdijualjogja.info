@@ -33,33 +33,22 @@
                 <a href="mailto:info@tanahdijualjogja.com" class="text-gray-300 hover:text-white">info@tanahdijualjogja.com</a>
               </div>
             </div>
-
-            <div class="flex items-start">
-              <div class="text-accent text-xl mr-4">
-                <span class="fas fa-clock"></span>
-              </div>
-              <div>
-                <h4 class="font-semibold mb-1">Jam Operasional</h4>
-                <p class="text-gray-300">Senin - Sabtu: 08.00 - 17.00 WIB</p>
-                <p class="text-gray-300">Minggu: Dengan Janji</p>
-              </div>
-            </div>
           </div>
 
           <!-- Social Media -->
           <div class="mt-8">
             <h4 class="font-semibold mb-4">Ikuti Kami</h4>
             <div class="flex space-x-4">
-              <a href="#" class="text-gray-300 hover:text-accent text-2xl">
+              <a href="https://www.instagram.com/tanahdijualjogja1/" class="text-gray-300 hover:text-accent text-2xl">
                 <span class="fab fa-instagram"></span>
               </a>
-              <a href="#" class="text-gray-300 hover:text-accent text-2xl">
+              <a href="https://www.facebook.com/share/1CBYN6yh2t/" class="text-gray-300 hover:text-accent text-2xl">
                 <span class="fab fa-facebook"></span>
               </a>
-              <a href="#" class="text-gray-300 hover:text-accent text-2xl">
+              <a href="https://www.youtube.com/channel/UCnrck-3Eu_9WPvgW9ktaL1w" class="text-gray-300 hover:text-accent text-2xl">
                 <span class="fab fa-youtube"></span>
               </a>
-              <a href="#" class="text-gray-300 hover:text-accent text-2xl">
+              <a href="https://www.tiktok.com/@tanah.dijualjogja" class="text-gray-300 hover:text-accent text-2xl">
                 <span class="fab fa-tiktok"></span>
               </a>
             </div>

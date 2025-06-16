@@ -1,93 +1,18 @@
 {
-  "_BUFDo8D0.js": {
-    "resourceType": "script",
-    "module": true,
+  "@vite/client": {
     "prefetch": true,
-    "preload": true,
-    "file": "BUFDo8D0.js",
-    "name": "v3",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "node_modules/nuxt/dist/app/components/error-404.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CBhLeF9b.js",
-    "name": "error-404",
-    "src": "node_modules/nuxt/dist/app/components/error-404.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_BUFDo8D0.js"
-    ],
-    "css": []
-  },
-  "error-404.4oxyXxx0.css": {
-    "file": "error-404.4oxyXxx0.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
-  },
-  "node_modules/nuxt/dist/app/components/error-500.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "DqViLbQ0.js",
-    "name": "error-500",
-    "src": "node_modules/nuxt/dist/app/components/error-500.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_BUFDo8D0.js"
-    ],
-    "css": []
-  },
-  "error-500.CZqNkBuR.css": {
-    "file": "error-500.CZqNkBuR.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
-  },
-  "node_modules/nuxt/dist/app/entry.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CGLJCHH1.js",
-    "name": "entry",
-    "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
-    "dynamicImports": [
-      "node_modules/nuxt/dist/app/components/error-404.vue",
-      "node_modules/nuxt/dist/app/components/error-500.vue"
-    ],
-    "_globalCSS": true
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
   },
-  "pages/index.vue": {
+  "/Users/ghozimahdi/Projects/Project Website/tanahdijualjogja/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CeoKXGrZ.js",
-    "name": "index",
-    "src": "pages/index.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_BUFDo8D0.js"
-    ],
-    "css": [
-      "index.n0gdBh8a.css"
-    ]
-  },
-  "index.n0gdBh8a.css": {
-    "file": "index.n0gdBh8a.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
+    "isEntry": true,
+    "file": "/Users/ghozimahdi/Projects/Project Website/tanahdijualjogja/node_modules/nuxt/dist/app/entry.js"
   }
 }

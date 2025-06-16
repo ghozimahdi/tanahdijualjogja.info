@@ -2,7 +2,6 @@
   <div>
     <HeroSection />
     <FeaturesSection />
-    <DreamHousesSection />
     <LandSection />
     <VideosSection />
     <ContactSection />
