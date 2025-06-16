@@ -9,28 +9,20 @@
       </div>
 
       <!-- Swiper Slider -->
-      <div class="relative">
+      <div class="relative max-w-3xl mx-auto">
         <swiper
             :modules="[SwiperNavigation, SwiperPagination, SwiperAutoplay]"
-            :slides-per-view="1"
-            :space-between="20"
+            :slidesPerView="1"
+            :space-between="0"
             :loop="getLoop"
             :autoplay="{ delay: 3500, disableOnInteraction: false }"
             :pagination="{ clickable: true }"
             :navigation="true"
-            :breakpoints="{
-            768: {
-              slidesPerView: 2,
-            },
-            1280: {
-              slidesPerView: 3,
-            },
-          }"
             class="mySwiper"
         >
           <swiper-slide v-for="(video, index) in videos" :key="index">
             <div
-                class="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col cursor-pointer transition-transform duration-300 hover:-translate-y-2"
+                class="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col cursor-pointer transition-transform duration-300 hover:-translate-y-2 w-full max-w-3xl mx-auto"
                 @click="openVideo(video.embedUrl)">
               <div class="relative aspect-[16/9] w-full">
                 <img

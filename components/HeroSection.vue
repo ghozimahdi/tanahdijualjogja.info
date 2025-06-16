@@ -3,8 +3,8 @@
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img
-          src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=2070&q=80"
-          alt="Pemandangan Gunung Merapi di Jogja"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyEwDtAWteGD238AUbPRrIK2YQtb9zR2Cun4AvD1ZYE_Oa3ZJ1bKT3CQUHxOwqjSiDhulPF6MSug2Mpy6864v-wXxTFytzze8yfEuoT3j2Y0rBHHG6Ousva0gfbp4WmhpYcUVi0NMYzreu/s1100/5561169b0423bdcd3a8b4568.jpeg"
+          alt="Tugu Jogja"
           class="w-full h-full object-cover"
       />
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
