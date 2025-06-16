@@ -87,6 +87,11 @@ import {Navigation, Pagination, Autoplay} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import pakemImage from '@/assets/images/pakem2.png'
+import permataResidence from '@/assets/images/permata-residence.png'
+import pakemImage1 from '@/assets/images/pakem1.png'
+import moyudan from '@/assets/images/moyudan.png'
+import alena from '@/assets/images/alena.png'
 
 export default defineComponent({
   name: 'LandSection',
@@ -97,40 +102,34 @@ export default defineComponent({
   setup() {
     const lands = [
       {
-        title: 'Tanah View Gunung Merapi',
-        description: 'Tanah kavling dengan pemandangan langsung ke Gunung Merapi. SHM Pekarangan.',
-        price: 'Rp 500rb/m²',
-        image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80'
+        title: 'Tanah Dekat JL. Palangan Joga',
+        description: 'Pas Bangun Kos-Kosan dan Hunian',
+        price: 'Rp 2jt-an/m²',
+        image: pakemImage
       },
       {
         title: 'Tanah Tepi Sawah',
-        description: 'Tanah dengan pemandangan sawah yang menyejukkan. Cocok untuk villa atau homestay.',
-        price: 'Rp 450rb/m²',
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+        description: 'Dekat Lapangan Kasihan Bantul',
+        price: 'Rp 2jt-an/m²',
+        image: permataResidence
       },
       {
-        title: 'Tanah Dekat Kampus UGM',
-        description: 'Lokasi strategis dekat kampus UGM. Investasi menguntungkan untuk kost mahasiswa.',
-        price: 'Rp 750rb/m²',
-        image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'
+        title: 'Tanah Dekat Warung Kopi Klotok',
+        description: 'Cocok Bangun Hunian Dan Kos-Kosan',
+        price: 'Rp 2jt-an/m²',
+        image: pakemImage1
       },
       {
-        title: 'Tanah Siap Bangun di Sleman',
-        description: 'Tanah kavling siap bangun dengan akses jalan aspal. Lingkungan perumahan.',
-        price: 'Rp 600rb/m²',
-        image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+        title: 'Tanah di Barat Tugu Yogyakarta',
+        description: 'Cocok Bangun Hunian Dan Villa',
+        price: 'Rp 2jt-an/m²',
+        image: moyudan
       },
       {
-        title: 'Tanah Luas di Bantul',
-        description: 'Tanah luas cocok untuk perumahan atau investasi jangka panjang.',
-        price: 'Rp 400rb/m²',
-        image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-      },
-      {
-        title: 'Tanah Premium di Kaliurang',
-        description: 'Tanah premium di kawasan wisata Kaliurang. Udara sejuk dan pemandangan indah.',
-        price: 'Rp 550rb/m²',
-        image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+        title: 'Tanah di Barat Unisa Trihanggo',
+        description: 'Cocok Bangun Hunian Dan Villa',
+        price: 'Rp 3jt-an/m²',
+        image: alena
       }
     ]
 
